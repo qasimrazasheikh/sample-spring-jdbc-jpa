@@ -20,7 +20,7 @@ public class PersonJpaRepository {
 	EntityManager entityManager;
 
 	public List<Person> findAll() {
-		TypedQuery<Person> namedQuery = entityManager.createNamedQuery("find_all_persons", Person.class);
+		//TypedQuery<Person> namedQuery = entityManager.createNamedQuery("find_all_persons", Person.class);
 		TypedQuery<Person> namedQuery= entityManager.createQuery("Select p from Person p",Person.class);
 
 		return namedQuery.getResultList();
