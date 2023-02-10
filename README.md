@@ -6,3 +6,4 @@ a project that deomonstrates
 3- spring data JPA using JPARepository
 
 m1
+m2
